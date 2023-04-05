@@ -1,6 +1,5 @@
 package com.example.beerservice.web.model;
 
-import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 
