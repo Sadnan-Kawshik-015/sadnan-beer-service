@@ -1,9 +1,8 @@
 package com.example.beerservice.web.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import lombok.*;
 
 import java.util.UUID;
 
@@ -13,5 +12,8 @@ import java.util.UUID;
 @NoArgsConstructor
 public class CustomerDTO {
     private UUID id;
+
+    @NotBlank
+    @Size(min = 3,max = 100)
     private String name;
 }
