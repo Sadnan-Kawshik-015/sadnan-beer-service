@@ -26,7 +26,7 @@ public class BeerDTO {
     @Positive
     @NotNull
     private BigDecimal price;
-    private Integer quantityOnHand;
+    private Integer minOnHand;
 
     @Null
     @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ssZ", shape=JsonFormat.Shape.STRING)
@@ -40,8 +40,7 @@ public class BeerDTO {
     @NotNull
     private BeerStyle beerStyle;
 
-    @Positive
     @NotNull
-    private Long upc;
+    private String upc;
 
 }
